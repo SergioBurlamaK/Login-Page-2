@@ -1,4 +1,4 @@
-import { Button, CssBaseline, Container, Grid } from "@mui/material";
+import { Button, CssBaseline, Container, Grid, TextField } from "@mui/material";
 
 export function login() {
   return (
@@ -10,14 +10,10 @@ export function login() {
             <h2>Faça seu login</h2>
           </Grid>
           <Grid item>
-            <label>
-              Email <input name="myEmail" />
-            </label>
+            <TextField  id="outline-required" label="Email" size="small"/>
           </Grid>
           <Grid item>
-            <label>
-              Senha <input name="myPassword" />
-            </label>
+          <TextField  id="outline-required" label="Password" size="small" type="password"/>
           </Grid>
           <Grid item>
             <a href="/*">Esqueci minha senha</a>
